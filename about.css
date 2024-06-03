@@ -1,0 +1,35 @@
+.About{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+}
+.About .about_image img{
+    width: 0px;
+    height: 0px;
+}
+.About .about_tag h1{
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.About .about_tag p{
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+    color: white;
+}
+.About .about_tag .about_btn{
+    padding: 10px 20px;
+    background: #089;
+    color: #fafafa;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}

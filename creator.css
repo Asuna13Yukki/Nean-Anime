@@ -1,0 +1,212 @@
+
+*{
+    margin: 200;
+    padding: 200;
+    box-sizing: border-box;
+    font-family: fantasy;
+    top: 20%;
+} 
+
+nav ul li a[href="#Home"],
+nav ul li a[href="#About"],
+nav ul li a[href="#Post"],
+nav ul li a[href="#Comments"]{
+    color: rgb(229, 225, 225);
+    font-size: 25px;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(80, 76, 76);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(11, 10, 10);
+}
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 100px rgb(194, 153, 243);
+    background: #020202;
+    position: 0;
+    left: 50;
+    z-index: 100;
+}
+section nav .logo img{
+    width: 200px;
+    cursor: pointer;
+    margin: 8px 8px;
+}
+section nav ul{
+    list-style: none;
+}
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+section nav li a{
+    text-decoration: none;
+    color: #f8f8f4fe;
+}
+section nav li a:hover{
+    color: rgb(223, 229, 229);
+}
+section nav .social_icon i{
+    margin: 0 5px;
+    font-size: 18px;
+    right: 50px;
+}
+section nav .social_icon i:hover{
+    color: rgb(217, 227, 229);
+    cursor: pointer;
+    right: 50px;
+}
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    color-interpolation-filters: 0895;
+    text-align: left;
+    color: white;
+}
+section .main h1{
+    position: relative;
+    font-size: 55px;
+    top: 20px;
+    left: 10px;
+}
+section .main h1 span{
+    color: rgba(198, 174, 245, 0.82);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 50%;
+}
+section .main p{
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    color: rgb(250, 249, 251);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* section .main .main_tag .main_btn{
+    background: #089;
+    padding: 10px 20px;
+    position: relative;
+    top: 240px;
+    left: 25px;
+    color: #f3f6f6;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+} */
+section .main .main_video video{
+    width: 460px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+
+/* About us */
+.About{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(199, 82, 71);
+}
+.About .about_image img{
+    width: 0px;
+    height: 0px;
+}
+.About .about_tag h1{
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+}
+.About .about_tag p{
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.creator-post1 img{
+    width: 100px; /* Adjust the size as needed */
+            height: 100px; /* Make sure width and height are equal for a perfect circle */
+            width: 130px;
+            border-radius: 50%; /* This creates the circular shape */
+            overflow: hidden; /* Hide anything outside the circle */
+        }
+        .creator-post2 img{
+            width: 100px; /* Adjust the size as needed */
+                    height: 100px; /* Make sure width and height are equal for a perfect circle */
+                    width: 130px;
+                    border-radius: 50%; /* This creates the circular shape */
+                    overflow: hidden; /* Hide anything outside the circle */
+                }        
+                .creator-post3 img{
+                    width: 100px; /* Adjust the size as needed */
+                            height: 100px; /* Make sure width and height are equal for a perfect circle */
+                            width: 130px;
+                            border-radius: 50%; /* This creates the circular shape */
+                            overflow: hidden; /* Hide anything outside the circle */
+                        }                
+
+h1{
+    background-color: rgb(11, 11, 11);
+    padding-left: 20%;
+}        
+
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.creator-post1{
+    background-color: palevioletred;
+    padding-left: 10%;
+}
+.prof2{
+    background-color: greenyellow;
+}
+.prof1{
+    background-color: palevioletred;
+}
+.creator-post2{
+    background-color: greenyellow;
+    padding-left: 10%;
+}
+.creator-post3{
+    background-color: palevioletred;
+    padding-left: 10%;
+}
+.prof3{
+    background-color: palevioletred;
+}
+h2{
+    background-image: url("/images/Image6.png");
+    background-size: 100%;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 50%;
+    background-size: cover; /* Ensures the background image covers the entire body */
+    background-position: center;
+    height: 100px;
+            display: flex;
+            align-items: center;
+}

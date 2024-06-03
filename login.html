@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    
+    <!-- ... (within the form) ... -->
+
+<div class="buttons">
+  <button type="button" class="cancelbtn">Cancel</button>
+  <button type="submit" class="signupbtn" id="signInButton">Sign In</button>
+</div>
+</form>
+</div>
+</div>
+
+<!-- ... (remaining HTML content) ... -->
+
+    <!-- Login -->
+    <div class="container">
+      <div class="login-form">
+        <form onsubmit="saveUserInfo(event)">
+          <h1>Login</h1>
+          <p>
+            Already have an account? Login in or
+            <a href="signup.html">Sign Up</a>
+          </p>
+
+          <label for="email">Email</label>
+          <input type="text" placeholder="Enter Email" name="email" id="email" required />
+
+          <label for="psw">Password</label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            id="password"
+            required
+          />
+
+          <label for="psw-repeat">Repeat Password</label>
+          <input
+            type="password"
+            placeholder="Repeat Password"
+            name="psw-repeat"
+            id="repeatPassword"
+            required
+          />
+
+          <label>
+            <input
+              type="checkbox"
+              checked="checked"
+              name="remember"
+              style="margin-bottom: 15px"
+            />
+            Remember me
+          </label>
+
+          <p>
+            By creating an account you agree to our
+            <a href="#">Terms & Privacy</a>.
+          </p>
+
+          <div class="buttons">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <button type="submit" class="signupbtn">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="">About us</a>
+          <a href="">Contact Us</a>
+          <a href="">Term & Conditions</a>
+          <a href="">Shipping Guide</a>
+        </div>
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="">Online Store</a>
+          <a href="">Customer Services</a>
+          <a href="">Promotion</a>
+          <a href="">Top Brands</a>
+        </div>
+        <div class="col d-flex">
+          <span><i class="bx bxl-facebook-square"></i></span>
+          <span><i class="bx bxl-instagram-alt"></i></span>
+          <span><i class="bx bxl-github"></i></span>
+          <span><i class="bx bxl-twitter"></i></span>
+          <span><i class="bx bxl-pinterest"></i></span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <!-- ... (previous HTML content) ... -->
+
+<!-- Custom Script -->
+<script src="./js/index.js"></script>
+<script>
+  function saveUserInfo(event) {
+    event.preventDefault();
+
+    var email = document.getElementById('email').value;
+    var password = document.getElementById('password').value;
+    var repeatPassword = document.getElementById('repeatPassword').value;
+
+    if (password !== repeatPassword) {
+      alert('Passwords do not match');
+      return;
+    }
+
+    var userInfo = {
+      email: email,
+      password: password
+    };
+
+    // Save user information to localStorage
+    localStorage.setItem('userInfo', JSON.stringify(userInfo));
+
+    // Update the button text with the user's email
+    var signInButton = document.getElementById('signInButton');
+    signInButton.textContent = email;
+
+    alert('User information saved successfully');
+  }
+</script>
+</body>
+</html>
+
+  </body>
+</html>
